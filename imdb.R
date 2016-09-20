@@ -48,4 +48,4 @@ eighties_plot
 # Collecting all four plots together
 grid.arrange(tens_plot, zeroes_plot, nineties_plot, eighties_plot, nrow=2, ncol=2, top = "IMDB Ratings Over the Decades")
 
-# Data found on Kaggle.com and drawn from the Internet Movie Database (imdb.com)
+# Data found on Kaggle.com (https://www.kaggle.com/deepmatrix/imdb-5000-movie-dataset) and drawn from the Internet Movie Database (imdb.com)
