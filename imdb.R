@@ -1,5 +1,9 @@
 # ggplot2, gridExtra, readr are loaded
 
+library(ggplot2)
+library(gridExtra)
+library(readr)
+
 # We seek to visualize movies over the past few decades to see how quality (or perceived quality at least) has changed over time.
 
 # Load the data
@@ -16,7 +20,7 @@ keeps <- c("imdb_score", "title_year")
 movies <- movies[keeps]
 
 # Subsetting movies into the past four decades
-tens <- subset(movies, title_year >= 2010) 
+tens <- subset(movies, title_year >= 2010)
 zeroes <- subset(movies, title_year >= 2000 & title_year < 2010)
 nineties <- subset(movies, title_year >= 1990 & title_year < 2000)
 eighties <- subset(movies, title_year >= 1980 & title_year < 1990)
