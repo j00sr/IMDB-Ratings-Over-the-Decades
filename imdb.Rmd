@@ -1,8 +1,7 @@
 ---
 title: "Visualizing IMDB Ratings"
 output:
-  html_document:
-    df_print: paged
+  github_document
 ---
 
 ```{r setup, include=FALSE}
