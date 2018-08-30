@@ -1,28 +1,16 @@
 ---
-title: "Visualizing IMDB ratings"
-
+title: "Visualizing IMDB Ratings"
 output:
   html_document:
-    toc: true
-    toc_float: true
-    includes:
-      in_header: 
-        header.html
-navbar:
-  title: "Home"
-  left:
-    - text: "About Me"
-      href: about_me.html
-    - text: "Portfolio"
-      menu:
-        - text: "Classifying wine quality"
-          href: FinalProject.html
-        - text: "Visualizing IMDB ratings"
-          href: imdb.html
+    df_print: paged
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
+knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, echo = TRUE, cache = TRUE, tidy.opts = list(width.cutoff=80))
+options(width = 80)
+library(ggplot2)
+library(gridExtra)
+library(readr)
 ```
 
 ----
@@ -34,12 +22,6 @@ We seek to visualize movies over the past few decades to see how quality (or per
 Data was found on [Kaggle.com](https://www.kaggle.com/deepmatrix/imdb-5000-movie-dataset) and drawn from the [Internet Movie Database](imdb.com). The code to create the plots can be found in the accompanying GitHub [repo](https://github.com/jstevenr/imdb-ratings) for this project, as `imdb.Rmd`.
 
 ----
-
-```{r, include = FALSE}
-library(ggplot2)
-library(gridExtra)
-library(readr)
-```
 
 # Data pre-processing
 
