@@ -49,7 +49,7 @@ We're also only going to be looking at the 1980s to the present, so we drop the 
 
 
 ```{r, data cleaning}
-all_movies <- read.csv("~/Documents/git-workspace/imdb-ratings/movie_metadata.csv",
+all_movies <- read.csv("movie_metadata.csv",
                    stringsAsFactors = FALSE, 
                    na.strings = c(NA, "NA", "", 0, "0"), 
                    skipNul = TRUE,
