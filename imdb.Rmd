@@ -6,7 +6,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, echo = TRUE, cache = TRUE, tidy.opts = list(width.cutoff=80))
+knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, echo = TRUE, cache = TRUE, tidy.opts = list(width.cutoff = 80))
 options(width = 80)
 library(ggplot2)
 library(gridExtra)
